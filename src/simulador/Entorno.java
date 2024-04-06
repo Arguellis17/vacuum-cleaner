@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Entorno {
 
-    private boolean[][] suciedad;
+   private boolean[][] suciedad;
     private int filas;
     private int columnas;
     private Aspiradora aspiradora;
