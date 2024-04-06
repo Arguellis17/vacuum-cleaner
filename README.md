@@ -16,16 +16,4 @@ El algoritmo de la aspiradora automática simula el comportamiento de una aspira
 </tr>
 </table>  
 
-## 📄 Clases 📄
-<table>
-<tr>
-<th>Aspiradora.java</th>
-<th>Entorno.java</th>
-<th>Test.java</th>
-</tr>
-<tr>
-<td>Contiene la implementación de la clase Aspiradora, que representa el agente aspiradora en el entorno.</td>
-<td>Contiene la implementación de la clase Entorno, que representa el entorno bidimensional en el que opera la aspiradora.</td>
-<td> Contiene el punto de entrada del programa, donde se crea el entorno y se ejecuta la simulación.</td>
-</tr>
-</table>
+
