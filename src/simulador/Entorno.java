@@ -48,43 +48,8 @@ public class Entorno {
         return columnas;
     }
 
-    // Método para imprimir el estado actual del entorno
-    public void imprimirEntorno() {
-        System.out.println("Estado actual del entorno:");
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                if (aspiradora.getPosicionX() == j && aspiradora.getPosicionY() == i) {
-                    // Si la aspiradora está en esta celda, la representamos con 'A'
-                    System.out.print("[A]");
-                } else if (suciedad[i][j]) {
-                    // Si la celda está sucia, la representamos con 'S'
-                    System.out.print("[S]");
-                } else {
-                    // Si la celda está limpia, la representamos con un espacio en blanco
-                    System.out.print("[ ]");
-                }
-            }
-            System.out.println();
-        }
-    }
-
-    // Método para imprimir el movimiento de la aspiradora hacia la celda donde estaba la suciedad
-    public void imprimirMovimientoAspiradora(int x, int y) {
-        System.out.println("Movimiento de la aspiradora hacia la celda donde estaba la suciedad:");
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                if (aspiradora.getPosicionX() == j && aspiradora.getPosicionY() == i) {
-                    // Si la aspiradora está en esta celda, la representamos con 'A'
-                    System.out.print("[A]");
-                } else if (x == j && y == i) {
-                    // Si la celda era donde estaba la suciedad, la representamos con 'X'
-                    System.out.print("[X]");
-                } else {
-                    // Si la celda está limpia, la representamos con un espacio en blanco
-                    System.out.print("[ ]");
-                }
-            }
-            System.out.println();
-        }
+    // Método para obtener las coordenadas de la aspiradora
+    public int[] getPosicionAspiradora() {
+        return new int[]{aspiradora.getPosicionX(), aspiradora.getPosicionY()};
     }
 }

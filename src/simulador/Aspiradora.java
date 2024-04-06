@@ -26,8 +26,8 @@ public class Aspiradora {
         this.posicionX = x;
         this.posicionY = y;
     }
-   
 }
+
 
     
 
